@@ -10,9 +10,7 @@ import streamlit as st
 
 RESULTS_DIR = Path("results")
 PROFILE_FILE = RESULTS_DIR / "student_profiles.csv"
-LOGO_PATH = Path(r"C:\Users\MSI\Desktop\I5-project-esprim\src\studycchatlogo.png")
-# Fallback relative path if you run the app from the project root:
-# LOGO_PATH = Path("src/studycchatlogo.png")
+LOGO_PATH = Path(__file__).resolve().parent / "studycchatlogo.png"
 
 st.set_page_config(
     page_title="StudyChat | Candidate Analytics",
